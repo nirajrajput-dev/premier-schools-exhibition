@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premier Schools Exhibition - Discover Gurugram's Top 30+ Schools All in One Place.">
+    <title>Premier Schools Exhibition</title>
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Accessibility: Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" id="main-header">
+        <div class="container header__container">
+            <!-- Logo: Animate on scroll -->
+            <a href="#" class="header__logo-link" aria-label="Premier Schools Exhibition Home">
+                <img src="assets/images/logos/logo-main.png" alt="Premier Schools Exhibition Logo" class="header__logo-img" id="header-logo" draggable="false">
+            </a>
+            
+            <!-- Register Button -->
+            <div class="header__actions">
+                <a href="#register" class="btn btn--white" id="header-btn">
+                    <span class="btn__icon" aria-hidden="true">↗</span> 
+                    <span class="btn__text">Register Now</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <!-- Hero Section -->
+        <section class="hero" aria-label="Event Highlights">
+            <div class="hero__slider-viewport">
+                <article class="hero__slide">
+                    <div class="container hero__grid">
+                        
+                        <!-- 1. Left Content -->
+                        <div class="hero__content">
+                            <h1 class="hero__title">
+                                Discover Gurugram’s <br>
+                                <span class="text-highlight">Top 30+ Schools</span>
+                            </h1>
+                            <p class="hero__subtitle">ALL IN ONE PLACE</p>
+                            
+                            <div class="hero__pill">
+                                <div class="hero__pill-loc">
+                                    <strong>Apparel House,</strong>
+                                    <span>Sec 44, Gurugram</span>
+                                </div>
+                                <div class="hero__pill-date">
+                                    <strong>2-3 August 2025</strong>
+                                    <span>Sat-Sun | 10AM - 6PM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Center: Vertical Marquee (3 Columns) -->
+                        <div class="hero__visuals" aria-hidden="true">
+                            <!-- Col 1: Scroll Up -->
+                            <div class="marquee-col marquee-col--up">
+                                <div class="marquee-col__track">
+                                    <div class="img-card"><img src="assets/images/marquee/marquee-1.png" alt="" draggable="false"></div>
+                                    <div class="img-card"><img src="assets/images/marquee/marquee-2.png" alt="" draggable="false"></div>
+                                    <div class="img-card"><img src="assets/images/marquee/marquee-3.png" alt="" draggable="false"></div>
+                                </div>
+                            </div>
+                            <!-- Col 2: Scroll Down -->
+                            <div class="marquee-col marquee-col--down">
+                                <div class="marquee-col__track">
+                                    <div class="img-card"><img src="assets/images/marquee/marquee-4.png" alt="" draggable="false"></div>
+                                    <div class="img-card"><img src="assets/images/marquee/marquee-1.png" alt="" draggable="false"></div>
+                                    <div class="img-card"><img src="assets/images/marquee/marquee-2.png" alt="" draggable="false"></div>
+                                </div>
+                            </div>
+                            <!-- Col 3: Scroll Up -->
+                            <div class="marquee-col marquee-col--up">
+                                <div class="marquee-col__track">
+                                    <div class="img-card"><img src="assets/images/marquee/marquee-3.png" alt="" draggable="false"></div>
+                                    <div class="img-card"><img src="assets/images/marquee/marquee-4.png" alt="" draggable="false"></div>
+                                    <div class="img-card"><img src="assets/images/marquee/marquee-1.png" alt="" draggable="false"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. Right: Lead Form -->
+                        <div class="hero__form-wrapper">
+                            <form class="lead-form" id="register-form">
+                                <h2 class="lead-form__title">Enquire Now</h2>
+                                
+                                <div class="form-group">
+                                    <label for="parentName" class="visually-hidden">Parent's Name</label>
+                                    <input type="text" id="parentName" class="form-input" placeholder="Parent's Name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phoneNumber" class="visually-hidden">Phone number</label>
+                                    <input type="tel" id="phoneNumber" class="form-input" placeholder="Phone number" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="grade" class="visually-hidden">Which grade are you looking for?</label>
+                                    <input type="text" id="grade" class="form-input form-input--tall" placeholder="Which grade are you looking for?" required>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn--submit">
+                                        <span class="btn__icon" aria-hidden="true">↗</span> 
+                                        <span class="btn__text">SUBMIT</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Trust Strip -->
+        <section class="trust-strip" aria-label="Trust Indicators">
+            <div class="container trust-strip__grid">
+                
+                <!-- Trust Item Template -->
+                <div class="trust-item">
+                    <div class="trust-item__wreath">
+                        <svg viewBox="0 0 93 166" class="wreath-svg" aria-hidden="true"><g clip-path="url(#clip0_1376_1377)"><path fill-rule="evenodd" clip-rule="evenodd" d="M46.2889 11.9258C31.9034 26.3738 22.3283 46.6126 20.8499 69.4428C17.8364 116.204 49.962 156.097 92.6066 158.551L92.2086 164.766C48.2676 162.231 15.1753 121.135 18.2799 72.9516C19.8606 48.4817 30.4706 26.9013 46.3002 11.9258H46.2889Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M65.2085 159.915C56.8956 162.632 51.9148 154.892 44.8755 153.666C37.8363 152.439 35.6302 156.67 30.9336 158.206C41.555 166.749 53.0065 167.242 65.1971 159.915H65.2085Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.2329 148.747C41.6357 149.573 38.1786 140.835 31.5375 138.049C24.8963 135.262 21.9851 138.943 17.1406 139.413C25.9652 150.203 37.0301 153.242 50.2329 148.747Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M34.3158 131.58C26.6284 130.926 24.7406 122.613 19.2594 119.081C13.7667 115.549 10.7191 118.336 6.375 117.969C12.7092 128.965 22.0682 133.449 34.3271 131.58H34.3158Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.57 114.966C18.5535 112.684 18.3147 104.508 13.8683 100.013C9.42186 95.5185 6.07852 97.4679 2.12109 96.1836C6.01029 107.834 13.8796 114.049 25.5813 114.955L25.57 114.966Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.0373 97.9273C13.5098 94.3267 14.5788 86.2083 10.9284 80.9221C7.27802 75.636 3.6845 76.9202 0 74.8906C1.95597 87.1485 8.68814 94.7854 20.0373 97.9273Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18.4092 79.3478C12.7915 74.2681 15.4411 66.5625 12.9507 60.508C10.4602 54.4536 6.70748 54.855 3.53472 51.9883C3.00024 64.4641 8.01525 73.5686 18.4092 79.3478Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.54 58.5845C16.8782 52.5071 21.0403 46.4986 20.3239 40.4671C19.6188 34.4241 16.2641 33.7017 14.1944 30.2617C10.726 41.0634 12.898 50.5119 20.54 58.5845Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.6658 40.9807C23.1078 34.6281 28.1797 30.7524 29.1236 25.3401C30.0674 19.9278 27.4064 18.2766 26.5308 14.6875C20.8221 22.9091 20.2535 31.6812 24.6771 40.9692L24.6658 40.9807Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M33.3839 26.6246C32.8381 21.7971 36.8865 19.5267 38.0692 15.6739C39.2518 11.8211 37.4664 10.3075 37.1594 7.58984C32.2467 12.9792 31.0072 19.3318 33.3726 26.6246H33.3839Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M42.0118 14.9394C42.8419 10.7425 46.788 10.1348 48.778 7.30253C50.7795 4.47025 49.7105 2.64705 50.1768 0.273438C44.6955 3.19745 42.0004 8.11667 42.0118 14.9394Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M76.734 154.01C71.5825 147.899 75.0623 140.663 73.1632 134.15C71.2641 127.625 67.4431 127.35 64.5319 123.91C62.7011 136.306 66.8291 146.339 76.734 154.022V154.01Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M61.7737 146.705C56.7587 140.639 60.3181 133.403 58.5441 126.913C56.7701 120.423 52.9832 120.159 50.1516 116.742C48.1388 129.103 52.0848 139.091 61.7737 146.705Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M45.0549 132.886C41.8139 126.293 46.4991 120.64 46.2489 114.425C45.9988 108.199 42.6554 107.086 40.8245 103.371C36.4691 113.978 37.9475 123.828 45.0549 132.898V132.886Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M32.309 115.686C30.535 108.933 35.8798 104.678 36.8009 98.8762C37.7106 93.0741 34.8449 91.3655 33.8328 87.5586C27.8739 96.4568 27.4191 105.859 32.309 115.686Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.9515 94.6682C24.2578 88.4532 29.4889 85.5292 31.0127 80.5641C32.548 75.599 30.2508 73.6612 29.8642 70.1523C23.5187 77.0782 21.9152 85.2769 24.9515 94.6682Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6623 72.8821C24.3674 67.2979 29.4847 66.0594 31.8501 62.1264C34.2154 58.1933 32.6461 55.9229 33.0327 52.7695C26.1073 57.2071 23.0141 63.9381 23.6623 72.8821Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M26.793 52.3913C28.5556 47.7817 33.1499 47.9996 35.9815 45.2247C38.8017 42.4382 37.9488 40.099 38.9382 37.4961C32.1378 39.5716 28.1121 44.5711 26.793 52.3913Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M33.0703 36.7071C35.2423 33.0149 39.177 33.9895 42.02 32.0631C44.8516 30.1367 44.4422 27.958 45.6704 25.8711C39.5182 26.5018 35.3333 30.1482 33.0703 36.7071Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M40.9844 22.7368C43.0427 19.9389 46.1586 21.1085 48.6036 19.8128C51.0485 18.5171 50.9007 16.7053 52.0606 15.1229C47.0229 15.0427 43.3384 17.6112 40.9844 22.7253V22.7368Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.3906 9.78085C52.358 6.44404 55.906 7.32698 58.4647 5.58404C61.0234 3.85256 60.6595 1.88029 61.7625 -0.0117188C56.2017 0.55015 52.4262 3.85256 50.3906 9.76939V9.78085Z" fill="#ED923A" fill-opacity="0.3"/></g><defs><clipPath id="clip0_1376_1377"><rect width="92.59" height="165.052" fill="white"/></clipPath></defs></svg>
+                    </div>
+                    <div class="trust-item__text">
+                        <strong>Trusted by<br>1 Million+</strong>
+                        <span>Parents</span>
+                    </div>
+                    <div class="trust-item__wreath">
+                        <svg viewBox="0 0 93 166" class="wreath-svg" aria-hidden="true"><g clip-path="url(#clip0_1376_1399)"><path fill-rule="evenodd" clip-rule="evenodd" d="M46.3051 11.9258C60.6905 26.3738 70.2657 46.6126 71.744 69.4428C74.7576 116.204 42.6319 156.097 -0.0126953 158.551L0.385315 164.766C44.3264 162.231 77.4186 121.135 74.3141 72.9516C72.7334 48.4817 62.1234 26.9013 46.2937 11.9258H46.3051Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M27.3776 159.915C35.6905 162.632 40.6714 154.892 47.7106 153.666C54.7498 152.439 56.9559 156.67 61.6525 158.206C51.0312 166.749 39.5797 167.242 27.389 159.915H27.3776Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M42.3572 148.747C50.9543 149.573 54.4114 140.835 61.0526 138.049C67.6938 135.262 70.605 138.943 75.4494 139.413C66.6248 150.203 55.5599 153.242 42.3572 148.747Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M58.2704 131.58C65.9578 130.926 67.8455 122.613 73.3268 119.081C78.8194 115.549 81.8671 118.336 86.2111 117.969C79.877 128.965 70.5179 133.449 58.259 131.58H58.2704Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.0279 114.966C74.0444 112.684 74.2832 104.508 78.7296 100.013C83.176 95.5185 86.5193 97.4679 90.4768 96.1836C86.5876 107.834 78.7182 114.049 67.0165 114.955L67.0279 114.966Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M72.5527 97.9273C79.0802 94.3267 78.0113 86.2083 81.6616 80.9221C85.312 75.636 88.9055 76.9202 92.59 74.8906C90.6341 87.1485 83.9019 94.7854 72.5527 97.9273Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M74.177 79.3478C79.7947 74.2681 77.145 66.5625 79.6355 60.508C82.1259 54.4536 85.8786 54.855 89.0514 51.9883C89.5859 64.4641 84.5709 73.5686 74.177 79.3478Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M72.0501 58.5845C75.7118 52.5071 71.5497 46.4986 72.2661 40.4671C72.9712 34.4241 76.3259 33.7017 78.3956 30.2617C81.864 41.0634 79.692 50.5119 72.0501 58.5845Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.9243 40.9807C69.4822 34.6281 64.4103 30.7524 63.4665 25.3401C62.5226 19.9278 65.1836 18.2766 66.0593 14.6875C71.768 22.9091 72.3366 31.6812 67.9129 40.9692L67.9243 40.9807Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M59.2139 26.6246C59.7598 21.7971 55.7114 19.5267 54.5287 15.6739C53.346 11.8211 55.1314 10.3075 55.4384 7.58984C60.3511 12.9792 61.5906 19.3318 59.2253 26.6246H59.2139Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.5861 14.9433C49.7559 10.7464 45.8099 10.1387 43.8198 7.30644C41.8184 4.47416 42.8873 2.65095 42.4211 0.277344C47.9023 3.20135 50.5975 8.12057 50.5861 14.9433Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8521 154.01C21.0036 147.899 17.5238 140.663 19.4229 134.15C21.322 127.625 25.143 127.35 28.0542 123.91C29.8851 136.306 25.7571 146.339 15.8521 154.022V154.01Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M30.8203 146.705C35.8353 140.639 32.2759 133.403 34.0499 126.913C35.8239 120.423 39.6107 120.159 42.4423 116.742C44.4552 129.103 40.5091 139.091 30.8203 146.705Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M47.5351 132.886C50.7761 126.293 46.0909 120.64 46.3411 114.425C46.5913 108.199 49.9346 107.086 51.7655 103.371C56.1209 113.978 54.6426 123.828 47.5351 132.898V132.886Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M60.2811 115.686C62.0551 108.933 56.7103 104.678 55.7892 98.8762C54.8794 93.0741 57.7451 91.3655 58.7572 87.5586C64.7161 96.4568 65.171 105.859 60.2811 115.686Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.6502 94.6682C68.3439 88.4532 63.1128 85.5292 61.589 80.5641C60.0538 75.599 62.3509 73.6612 62.7376 70.1523C69.0831 77.0782 70.6865 85.2769 67.6502 94.6682Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M68.9277 72.8821C68.2227 67.2979 63.1053 66.0594 60.74 62.1264C58.3746 58.1933 59.9439 55.9229 59.5573 52.7695C66.4828 57.2071 69.5759 63.9381 68.9277 72.8821Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M65.7971 52.3913C64.0344 47.7817 59.4402 47.9996 56.6086 45.2247C53.7883 42.4382 54.6412 40.099 53.6519 37.4961C60.4523 39.5716 64.4779 44.5711 65.7971 52.3913Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M59.5158 36.7071C57.3438 33.0149 53.4091 33.9895 50.5661 32.0631C47.7345 30.1367 48.1439 27.958 46.9157 25.8711C53.0679 26.5018 57.2528 30.1482 59.5158 36.7071Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M51.6057 22.7368C49.5473 19.9389 46.4314 21.1085 43.9865 19.8128C41.5415 18.5171 41.6894 16.7053 40.5294 15.1229C45.5672 15.0427 49.2517 17.6112 51.6057 22.7253V22.7368Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M42.1994 9.78085C40.2321 6.44404 36.684 7.32698 34.1254 5.58404C31.5667 3.85256 31.9306 1.88029 30.8275 -0.0117188C36.3884 0.55015 40.1638 3.85256 42.1994 9.76939V9.78085Z" fill="#ED923A" fill-opacity="0.3"/></g><defs><clipPath id="clip0_1376_1399"><rect width="92.59" height="165.052" fill="white" transform="matrix(-1 0 0 1 92.59 0)"/></clipPath></defs></svg>
+                    </div>
+                </div>
+
+                <!-- Trust Item 2 -->
+                <div class="trust-item">
+                    <div class="trust-item__wreath">
+                        <svg viewBox="0 0 93 166" class="wreath-svg" aria-hidden="true"><g clip-path="url(#clip0_1376_1377)"><path fill-rule="evenodd" clip-rule="evenodd" d="M46.2889 11.9258C31.9034 26.3738 22.3283 46.6126 20.8499 69.4428C17.8364 116.204 49.962 156.097 92.6066 158.551L92.2086 164.766C48.2676 162.231 15.1753 121.135 18.2799 72.9516C19.8606 48.4817 30.4706 26.9013 46.3002 11.9258H46.2889Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M65.2085 159.915C56.8956 162.632 51.9148 154.892 44.8755 153.666C37.8363 152.439 35.6302 156.67 30.9336 158.206C41.555 166.749 53.0065 167.242 65.1971 159.915H65.2085Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.2329 148.747C41.6357 149.573 38.1786 140.835 31.5375 138.049C24.8963 135.262 21.9851 138.943 17.1406 139.413C25.9652 150.203 37.0301 153.242 50.2329 148.747Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M34.3158 131.58C26.6284 130.926 24.7406 122.613 19.2594 119.081C13.7667 115.549 10.7191 118.336 6.375 117.969C12.7092 128.965 22.0682 133.449 34.3271 131.58H34.3158Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.57 114.966C18.5535 112.684 18.3147 104.508 13.8683 100.013C9.42186 95.5185 6.07852 97.4679 2.12109 96.1836C6.01029 107.834 13.8796 114.049 25.5813 114.955L25.57 114.966Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.0373 97.9273C13.5098 94.3267 14.5788 86.2083 10.9284 80.9221C7.27802 75.636 3.6845 76.9202 0 74.8906C1.95597 87.1485 8.68814 94.7854 20.0373 97.9273Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18.4092 79.3478C12.7915 74.2681 15.4411 66.5625 12.9507 60.508C10.4602 54.4536 6.70748 54.855 3.53472 51.9883C3.00024 64.4641 8.01525 73.5686 18.4092 79.3478Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.54 58.5845C16.8782 52.5071 21.0403 46.4986 20.3239 40.4671C19.6188 34.4241 16.2641 33.7017 14.1944 30.2617C10.726 41.0634 12.898 50.5119 20.54 58.5845Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.6658 40.9807C23.1078 34.6281 28.1797 30.7524 29.1236 25.3401C30.0674 19.9278 27.4064 18.2766 26.5308 14.6875C20.8221 22.9091 20.2535 31.6812 24.6771 40.9692L24.6658 40.9807Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M33.3839 26.6246C32.8381 21.7971 36.8865 19.5267 38.0692 15.6739C39.2518 11.8211 37.4664 10.3075 37.1594 7.58984C32.2467 12.9792 31.0072 19.3318 33.3726 26.6246H33.3839Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M42.0118 14.9394C42.8419 10.7425 46.788 10.1348 48.778 7.30253C50.7795 4.47025 49.7105 2.64705 50.1768 0.273438C44.6955 3.19745 42.0004 8.11667 42.0118 14.9394Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M76.734 154.01C71.5825 147.899 75.0623 140.663 73.1632 134.15C71.2641 127.625 67.4431 127.35 64.5319 123.91C62.7011 136.306 66.8291 146.339 76.734 154.022V154.01Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M61.7737 146.705C56.7587 140.639 60.3181 133.403 58.5441 126.913C56.7701 120.423 52.9832 120.159 50.1516 116.742C48.1388 129.103 52.0848 139.091 61.7737 146.705Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M45.0549 132.886C41.8139 126.293 46.4991 120.64 46.2489 114.425C45.9988 108.199 42.6554 107.086 40.8245 103.371C36.4691 113.978 37.9475 123.828 45.0549 132.898V132.886Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M32.309 115.686C30.535 108.933 35.8798 104.678 36.8009 98.8762C37.7106 93.0741 34.8449 91.3655 33.8328 87.5586C27.8739 96.4568 27.4191 105.859 32.309 115.686Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.9515 94.6682C24.2578 88.4532 29.4889 85.5292 31.0127 80.5641C32.548 75.599 30.2508 73.6612 29.8642 70.1523C23.5187 77.0782 21.9152 85.2769 24.9515 94.6682Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6623 72.8821C24.3674 67.2979 29.4847 66.0594 31.8501 62.1264C34.2154 58.1933 32.6461 55.9229 33.0327 52.7695C26.1073 57.2071 23.0141 63.9381 23.6623 72.8821Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M26.793 52.3913C28.5556 47.7817 33.1499 47.9996 35.9815 45.2247C38.8017 42.4382 37.9488 40.099 38.9382 37.4961C32.1378 39.5716 28.1121 44.5711 26.793 52.3913Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M33.0703 36.7071C35.2423 33.0149 39.177 33.9895 42.02 32.0631C44.8516 30.1367 44.4422 27.958 45.6704 25.8711C39.5182 26.5018 35.3333 30.1482 33.0703 36.7071Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M40.9844 22.7368C43.0427 19.9389 46.1586 21.1085 48.6036 19.8128C51.0485 18.5171 50.9007 16.7053 52.0606 15.1229C47.0229 15.0427 43.3384 17.6112 40.9844 22.7253V22.7368Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.3906 9.78085C52.358 6.44404 55.906 7.32698 58.4647 5.58404C61.0234 3.85256 60.6595 1.88029 61.7625 -0.0117188C56.2017 0.55015 52.4262 3.85256 50.3906 9.76939V9.78085Z" fill="#ED923A" fill-opacity="0.3"/></g><defs><clipPath id="clip0_1376_1377"><rect width="92.59" height="165.052" fill="white"/></clipPath></defs></svg>
+                    </div>
+                    <div class="trust-item__text">
+                        <strong>22+<br>Years</strong>
+                        <span>of Legacy</span>
+                    </div>
+                    <div class="trust-item__wreath">
+                        <svg viewBox="0 0 93 166" class="wreath-svg" aria-hidden="true"><g clip-path="url(#clip0_1376_1399)"><path fill-rule="evenodd" clip-rule="evenodd" d="M46.3051 11.9258C60.6905 26.3738 70.2657 46.6126 71.744 69.4428C74.7576 116.204 42.6319 156.097 -0.0126953 158.551L0.385315 164.766C44.3264 162.231 77.4186 121.135 74.3141 72.9516C72.7334 48.4817 62.1234 26.9013 46.2937 11.9258H46.3051Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M27.3776 159.915C35.6905 162.632 40.6714 154.892 47.7106 153.666C54.7498 152.439 56.9559 156.67 61.6525 158.206C51.0312 166.749 39.5797 167.242 27.389 159.915H27.3776Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M42.3572 148.747C50.9543 149.573 54.4114 140.835 61.0526 138.049C67.6938 135.262 70.605 138.943 75.4494 139.413C66.6248 150.203 55.5599 153.242 42.3572 148.747Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M58.2704 131.58C65.9578 130.926 67.8455 122.613 73.3268 119.081C78.8194 115.549 81.8671 118.336 86.2111 117.969C79.877 128.965 70.5179 133.449 58.259 131.58H58.2704Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.0279 114.966C74.0444 112.684 74.2832 104.508 78.7296 100.013C83.176 95.5185 86.5193 97.4679 90.4768 96.1836C86.5876 107.834 78.7182 114.049 67.0165 114.955L67.0279 114.966Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M72.5527 97.9273C79.0802 94.3267 78.0113 86.2083 81.6616 80.9221C85.312 75.636 88.9055 76.9202 92.59 74.8906C90.6341 87.1485 83.9019 94.7854 72.5527 97.9273Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M74.177 79.3478C79.7947 74.2681 77.145 66.5625 79.6355 60.508C82.1259 54.4536 85.8786 54.855 89.0514 51.9883C89.5859 64.4641 84.5709 73.5686 74.177 79.3478Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M72.0501 58.5845C75.7118 52.5071 71.5497 46.4986 72.2661 40.4671C72.9712 34.4241 76.3259 33.7017 78.3956 30.2617C81.864 41.0634 79.692 50.5119 72.0501 58.5845Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.9243 40.9807C69.4822 34.6281 64.4103 30.7524 63.4665 25.3401C62.5226 19.9278 65.1836 18.2766 66.0593 14.6875C71.768 22.9091 72.3366 31.6812 67.9129 40.9692L67.9243 40.9807Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M59.2139 26.6246C59.7598 21.7971 55.7114 19.5267 54.5287 15.6739C53.346 11.8211 55.1314 10.3075 55.4384 7.58984C60.3511 12.9792 61.5906 19.3318 59.2253 26.6246H59.2139Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.5861 14.9433C49.7559 10.7464 45.8099 10.1387 43.8198 7.30644C41.8184 4.47416 42.8873 2.65095 42.4211 0.277344C47.9023 3.20135 50.5975 8.12057 50.5861 14.9433Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8521 154.01C21.0036 147.899 17.5238 140.663 19.4229 134.15C21.322 127.625 25.143 127.35 28.0542 123.91C29.8851 136.306 25.7571 146.339 15.8521 154.022V154.01Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M30.8203 146.705C35.8353 140.639 32.2759 133.403 34.0499 126.913C35.8239 120.423 39.6107 120.159 42.4423 116.742C44.4552 129.103 40.5091 139.091 30.8203 146.705Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M47.5351 132.886C50.7761 126.293 46.0909 120.64 46.3411 114.425C46.5913 108.199 49.9346 107.086 51.7655 103.371C56.1209 113.978 54.6426 123.828 47.5351 132.898V132.886Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M60.2811 115.686C62.0551 108.933 56.7103 104.678 55.7892 98.8762C54.8794 93.0741 57.7451 91.3655 58.7572 87.5586C64.7161 96.4568 65.171 105.859 60.2811 115.686Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.6502 94.6682C68.3439 88.4532 63.1128 85.5292 61.589 80.5641C60.0538 75.599 62.3509 73.6612 62.7376 70.1523C69.0831 77.0782 70.6865 85.2769 67.6502 94.6682Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M68.9277 72.8821C68.2227 67.2979 63.1053 66.0594 60.74 62.1264C58.3746 58.1933 59.9439 55.9229 59.5573 52.7695C66.4828 57.2071 69.5759 63.9381 68.9277 72.8821Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M65.7971 52.3913C64.0344 47.7817 59.4402 47.9996 56.6086 45.2247C53.7883 42.4382 54.6412 40.099 53.6519 37.4961C60.4523 39.5716 64.4779 44.5711 65.7971 52.3913Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M59.5158 36.7071C57.3438 33.0149 53.4091 33.9895 50.5661 32.0631C47.7345 30.1367 48.1439 27.958 46.9157 25.8711C53.0679 26.5018 57.2528 30.1482 59.5158 36.7071Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M51.6057 22.7368C49.5473 19.9389 46.4314 21.1085 43.9865 19.8128C41.5415 18.5171 41.6894 16.7053 40.5294 15.1229C45.5672 15.0427 49.2517 17.6112 51.6057 22.7253V22.7368Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M42.1994 9.78085C40.2321 6.44404 36.684 7.32698 34.1254 5.58404C31.5667 3.85256 31.9306 1.88029 30.8275 -0.0117188C36.3884 0.55015 40.1638 3.85256 42.1994 9.76939V9.78085Z" fill="#ED923A" fill-opacity="0.3"/></g><defs><clipPath id="clip0_1376_1399"><rect width="92.59" height="165.052" fill="white" transform="matrix(-1 0 0 1 92.59 0)"/></clipPath></defs></svg>
+                    </div>
+                </div>
+
+                <!-- Trust Item 3 -->
+                <div class="trust-item">
+                    <div class="trust-item__wreath">
+                        <svg viewBox="0 0 93 166" class="wreath-svg" aria-hidden="true"><g clip-path="url(#clip0_1376_1377)"><path fill-rule="evenodd" clip-rule="evenodd" d="M46.2889 11.9258C31.9034 26.3738 22.3283 46.6126 20.8499 69.4428C17.8364 116.204 49.962 156.097 92.6066 158.551L92.2086 164.766C48.2676 162.231 15.1753 121.135 18.2799 72.9516C19.8606 48.4817 30.4706 26.9013 46.3002 11.9258H46.2889Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M65.2085 159.915C56.8956 162.632 51.9148 154.892 44.8755 153.666C37.8363 152.439 35.6302 156.67 30.9336 158.206C41.555 166.749 53.0065 167.242 65.1971 159.915H65.2085Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.2329 148.747C41.6357 149.573 38.1786 140.835 31.5375 138.049C24.8963 135.262 21.9851 138.943 17.1406 139.413C25.9652 150.203 37.0301 153.242 50.2329 148.747Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M34.3158 131.58C26.6284 130.926 24.7406 122.613 19.2594 119.081C13.7667 115.549 10.7191 118.336 6.375 117.969C12.7092 128.965 22.0682 133.449 34.3271 131.58H34.3158Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.57 114.966C18.5535 112.684 18.3147 104.508 13.8683 100.013C9.42186 95.5185 6.07852 97.4679 2.12109 96.1836C6.01029 107.834 13.8796 114.049 25.5813 114.955L25.57 114.966Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.0373 97.9273C13.5098 94.3267 14.5788 86.2083 10.9284 80.9221C7.27802 75.636 3.6845 76.9202 0 74.8906C1.95597 87.1485 8.68814 94.7854 20.0373 97.9273Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18.4092 79.3478C12.7915 74.2681 15.4411 66.5625 12.9507 60.508C10.4602 54.4536 6.70748 54.855 3.53472 51.9883C3.00024 64.4641 8.01525 73.5686 18.4092 79.3478Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.54 58.5845C16.8782 52.5071 21.0403 46.4986 20.3239 40.4671C19.6188 34.4241 16.2641 33.7017 14.1944 30.2617C10.726 41.0634 12.898 50.5119 20.54 58.5845Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.6658 40.9807C23.1078 34.6281 28.1797 30.7524 29.1236 25.3401C30.0674 19.9278 27.4064 18.2766 26.5308 14.6875C20.8221 22.9091 20.2535 31.6812 24.6771 40.9692L24.6658 40.9807Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M33.3839 26.6246C32.8381 21.7971 36.8865 19.5267 38.0692 15.6739C39.2518 11.8211 37.4664 10.3075 37.1594 7.58984C32.2467 12.9792 31.0072 19.3318 33.3726 26.6246H33.3839Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M42.0118 14.9394C42.8419 10.7425 46.788 10.1348 48.778 7.30253C50.7795 4.47025 49.7105 2.64705 50.1768 0.273438C44.6955 3.19745 42.0004 8.11667 42.0118 14.9394Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M76.734 154.01C71.5825 147.899 75.0623 140.663 73.1632 134.15C71.2641 127.625 67.4431 127.35 64.5319 123.91C62.7011 136.306 66.8291 146.339 76.734 154.022V154.01Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M61.7737 146.705C56.7587 140.639 60.3181 133.403 58.5441 126.913C56.7701 120.423 52.9832 120.159 50.1516 116.742C48.1388 129.103 52.0848 139.091 61.7737 146.705Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M45.0549 132.886C41.8139 126.293 46.4991 120.64 46.2489 114.425C45.9988 108.199 42.6554 107.086 40.8245 103.371C36.4691 113.978 37.9475 123.828 45.0549 132.898V132.886Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M32.309 115.686C30.535 108.933 35.8798 104.678 36.8009 98.8762C37.7106 93.0741 34.8449 91.3655 33.8328 87.5586C27.8739 96.4568 27.4191 105.859 32.309 115.686Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.9515 94.6682C24.2578 88.4532 29.4889 85.5292 31.0127 80.5641C32.548 75.599 30.2508 73.6612 29.8642 70.1523C23.5187 77.0782 21.9152 85.2769 24.9515 94.6682Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6623 72.8821C24.3674 67.2979 29.4847 66.0594 31.8501 62.1264C34.2154 58.1933 32.6461 55.9229 33.0327 52.7695C26.1073 57.2071 23.0141 63.9381 23.6623 72.8821Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M26.793 52.3913C28.5556 47.7817 33.1499 47.9996 35.9815 45.2247C38.8017 42.4382 37.9488 40.099 38.9382 37.4961C32.1378 39.5716 28.1121 44.5711 26.793 52.3913Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M33.0703 36.7071C35.2423 33.0149 39.177 33.9895 42.02 32.0631C44.8516 30.1367 44.4422 27.958 45.6704 25.8711C39.5182 26.5018 35.3333 30.1482 33.0703 36.7071Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M40.9844 22.7368C43.0427 19.9389 46.1586 21.1085 48.6036 19.8128C51.0485 18.5171 50.9007 16.7053 52.0606 15.1229C47.0229 15.0427 43.3384 17.6112 40.9844 22.7253V22.7368Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.3906 9.78085C52.358 6.44404 55.906 7.32698 58.4647 5.58404C61.0234 3.85256 60.6595 1.88029 61.7625 -0.0117188C56.2017 0.55015 52.4262 3.85256 50.3906 9.76939V9.78085Z" fill="#ED923A" fill-opacity="0.3"/></g><defs><clipPath id="clip0_1376_1377"><rect width="92.59" height="165.052" fill="white"/></clipPath></defs></svg>
+                    </div>
+                    <div class="trust-item__text">
+                        <strong>500+<br>Participating</strong>
+                        <span>Schools</span>
+                    </div>
+                    <div class="trust-item__wreath">
+                        <svg viewBox="0 0 93 166" class="wreath-svg" aria-hidden="true"><g clip-path="url(#clip0_1376_1399)"><path fill-rule="evenodd" clip-rule="evenodd" d="M46.3051 11.9258C60.6905 26.3738 70.2657 46.6126 71.744 69.4428C74.7576 116.204 42.6319 156.097 -0.0126953 158.551L0.385315 164.766C44.3264 162.231 77.4186 121.135 74.3141 72.9516C72.7334 48.4817 62.1234 26.9013 46.2937 11.9258H46.3051Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M27.3776 159.915C35.6905 162.632 40.6714 154.892 47.7106 153.666C54.7498 152.439 56.9559 156.67 61.6525 158.206C51.0312 166.749 39.5797 167.242 27.389 159.915H27.3776Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M42.3572 148.747C50.9543 149.573 54.4114 140.835 61.0526 138.049C67.6938 135.262 70.605 138.943 75.4494 139.413C66.6248 150.203 55.5599 153.242 42.3572 148.747Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M58.2704 131.58C65.9578 130.926 67.8455 122.613 73.3268 119.081C78.8194 115.549 81.8671 118.336 86.2111 117.969C79.877 128.965 70.5179 133.449 58.259 131.58H58.2704Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.0279 114.966C74.0444 112.684 74.2832 104.508 78.7296 100.013C83.176 95.5185 86.5193 97.4679 90.4768 96.1836C86.5876 107.834 78.7182 114.049 67.0165 114.955L67.0279 114.966Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M72.5527 97.9273C79.0802 94.3267 78.0113 86.2083 81.6616 80.9221C85.312 75.636 88.9055 76.9202 92.59 74.8906C90.6341 87.1485 83.9019 94.7854 72.5527 97.9273Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M74.177 79.3478C79.7947 74.2681 77.145 66.5625 79.6355 60.508C82.1259 54.4536 85.8786 54.855 89.0514 51.9883C89.5859 64.4641 84.5709 73.5686 74.177 79.3478Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M72.0501 58.5845C75.7118 52.5071 71.5497 46.4986 72.2661 40.4671C72.9712 34.4241 76.3259 33.7017 78.3956 30.2617C81.864 41.0634 79.692 50.5119 72.0501 58.5845Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.9243 40.9807C69.4822 34.6281 64.4103 30.7524 63.4665 25.3401C62.5226 19.9278 65.1836 18.2766 66.0593 14.6875C71.768 22.9091 72.3366 31.6812 67.9129 40.9692L67.9243 40.9807Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M59.2139 26.6246C59.7598 21.7971 55.7114 19.5267 54.5287 15.6739C53.346 11.8211 55.1314 10.3075 55.4384 7.58984C60.3511 12.9792 61.5906 19.3318 59.2253 26.6246H59.2139Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.5861 14.9433C49.7559 10.7464 45.8099 10.1387 43.8198 7.30644C41.8184 4.47416 42.8873 2.65095 42.4211 0.277344C47.9023 3.20135 50.5975 8.12057 50.5861 14.9433Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8521 154.01C21.0036 147.899 17.5238 140.663 19.4229 134.15C21.322 127.625 25.143 127.35 28.0542 123.91C29.8851 136.306 25.7571 146.339 15.8521 154.022V154.01Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M30.8203 146.705C35.8353 140.639 32.2759 133.403 34.0499 126.913C35.8239 120.423 39.6107 120.159 42.4423 116.742C44.4552 129.103 40.5091 139.091 30.8203 146.705Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M47.5351 132.886C50.7761 126.293 46.0909 120.64 46.3411 114.425C46.5913 108.199 49.9346 107.086 51.7655 103.371C56.1209 113.978 54.6426 123.828 47.5351 132.898V132.886Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M60.2811 115.686C62.0551 108.933 56.7103 104.678 55.7892 98.8762C54.8794 93.0741 57.7451 91.3655 58.7572 87.5586C64.7161 96.4568 65.171 105.859 60.2811 115.686Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.6502 94.6682C68.3439 88.4532 63.1128 85.5292 61.589 80.5641C60.0538 75.599 62.3509 73.6612 62.7376 70.1523C69.0831 77.0782 70.6865 85.2769 67.6502 94.6682Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M68.9277 72.8821C68.2227 67.2979 63.1053 66.0594 60.74 62.1264C58.3746 58.1933 59.9439 55.9229 59.5573 52.7695C66.4828 57.2071 69.5759 63.9381 68.9277 72.8821Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M65.7971 52.3913C64.0344 47.7817 59.4402 47.9996 56.6086 45.2247C53.7883 42.4382 54.6412 40.099 53.6519 37.4961C60.4523 39.5716 64.4779 44.5711 65.7971 52.3913Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M59.5158 36.7071C57.3438 33.0149 53.4091 33.9895 50.5661 32.0631C47.7345 30.1367 48.1439 27.958 46.9157 25.8711C53.0679 26.5018 57.2528 30.1482 59.5158 36.7071Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M51.6057 22.7368C49.5473 19.9389 46.4314 21.1085 43.9865 19.8128C41.5415 18.5171 41.6894 16.7053 40.5294 15.1229C45.5672 15.0427 49.2517 17.6112 51.6057 22.7253V22.7368Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M42.1994 9.78085C40.2321 6.44404 36.684 7.32698 34.1254 5.58404C31.5667 3.85256 31.9306 1.88029 30.8275 -0.0117188C36.3884 0.55015 40.1638 3.85256 42.1994 9.76939V9.78085Z" fill="#ED923A" fill-opacity="0.3"/></g><defs><clipPath id="clip0_1376_1399"><rect width="92.59" height="165.052" fill="white" transform="matrix(-1 0 0 1 92.59 0)"/></clipPath></defs></svg>
+                    </div>
+                </div>
+
+                <!-- Trust Item 4 -->
+                <div class="trust-item">
+                    <div class="trust-item__wreath">
+                        <svg viewBox="0 0 93 166" class="wreath-svg" aria-hidden="true"><g clip-path="url(#clip0_1376_1377)"><path fill-rule="evenodd" clip-rule="evenodd" d="M46.2889 11.9258C31.9034 26.3738 22.3283 46.6126 20.8499 69.4428C17.8364 116.204 49.962 156.097 92.6066 158.551L92.2086 164.766C48.2676 162.231 15.1753 121.135 18.2799 72.9516C19.8606 48.4817 30.4706 26.9013 46.3002 11.9258H46.2889Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M65.2085 159.915C56.8956 162.632 51.9148 154.892 44.8755 153.666C37.8363 152.439 35.6302 156.67 30.9336 158.206C41.555 166.749 53.0065 167.242 65.1971 159.915H65.2085Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.2329 148.747C41.6357 149.573 38.1786 140.835 31.5375 138.049C24.8963 135.262 21.9851 138.943 17.1406 139.413C25.9652 150.203 37.0301 153.242 50.2329 148.747Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M34.3158 131.58C26.6284 130.926 24.7406 122.613 19.2594 119.081C13.7667 115.549 10.7191 118.336 6.375 117.969C12.7092 128.965 22.0682 133.449 34.3271 131.58H34.3158Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.57 114.966C18.5535 112.684 18.3147 104.508 13.8683 100.013C9.42186 95.5185 6.07852 97.4679 2.12109 96.1836C6.01029 107.834 13.8796 114.049 25.5813 114.955L25.57 114.966Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.0373 97.9273C13.5098 94.3267 14.5788 86.2083 10.9284 80.9221C7.27802 75.636 3.6845 76.9202 0 74.8906C1.95597 87.1485 8.68814 94.7854 20.0373 97.9273Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M18.4092 79.3478C12.7915 74.2681 15.4411 66.5625 12.9507 60.508C10.4602 54.4536 6.70748 54.855 3.53472 51.9883C3.00024 64.4641 8.01525 73.5686 18.4092 79.3478Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.54 58.5845C16.8782 52.5071 21.0403 46.4986 20.3239 40.4671C19.6188 34.4241 16.2641 33.7017 14.1944 30.2617C10.726 41.0634 12.898 50.5119 20.54 58.5845Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.6658 40.9807C23.1078 34.6281 28.1797 30.7524 29.1236 25.3401C30.0674 19.9278 27.4064 18.2766 26.5308 14.6875C20.8221 22.9091 20.2535 31.6812 24.6771 40.9692L24.6658 40.9807Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M33.3839 26.6246C32.8381 21.7971 36.8865 19.5267 38.0692 15.6739C39.2518 11.8211 37.4664 10.3075 37.1594 7.58984C32.2467 12.9792 31.0072 19.3318 33.3726 26.6246H33.3839Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M42.0118 14.9394C42.8419 10.7425 46.788 10.1348 48.778 7.30253C50.7795 4.47025 49.7105 2.64705 50.1768 0.273438C44.6955 3.19745 42.0004 8.11667 42.0118 14.9394Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M76.734 154.01C71.5825 147.899 75.0623 140.663 73.1632 134.15C71.2641 127.625 67.4431 127.35 64.5319 123.91C62.7011 136.306 66.8291 146.339 76.734 154.022V154.01Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M61.7737 146.705C56.7587 140.639 60.3181 133.403 58.5441 126.913C56.7701 120.423 52.9832 120.159 50.1516 116.742C48.1388 129.103 52.0848 139.091 61.7737 146.705Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M45.0549 132.886C41.8139 126.293 46.4991 120.64 46.2489 114.425C45.9988 108.199 42.6554 107.086 40.8245 103.371C36.4691 113.978 37.9475 123.828 45.0549 132.898V132.886Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M32.309 115.686C30.535 108.933 35.8798 104.678 36.8009 98.8762C37.7106 93.0741 34.8449 91.3655 33.8328 87.5586C27.8739 96.4568 27.4191 105.859 32.309 115.686Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.9515 94.6682C24.2578 88.4532 29.4889 85.5292 31.0127 80.5641C32.548 75.599 30.2508 73.6612 29.8642 70.1523C23.5187 77.0782 21.9152 85.2769 24.9515 94.6682Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6623 72.8821C24.3674 67.2979 29.4847 66.0594 31.8501 62.1264C34.2154 58.1933 32.6461 55.9229 33.0327 52.7695C26.1073 57.2071 23.0141 63.9381 23.6623 72.8821Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M26.793 52.3913C28.5556 47.7817 33.1499 47.9996 35.9815 45.2247C38.8017 42.4382 37.9488 40.099 38.9382 37.4961C32.1378 39.5716 28.1121 44.5711 26.793 52.3913Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M33.0703 36.7071C35.2423 33.0149 39.177 33.9895 42.02 32.0631C44.8516 30.1367 44.4422 27.958 45.6704 25.8711C39.5182 26.5018 35.3333 30.1482 33.0703 36.7071Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M40.9844 22.7368C43.0427 19.9389 46.1586 21.1085 48.6036 19.8128C51.0485 18.5171 50.9007 16.7053 52.0606 15.1229C47.0229 15.0427 43.3384 17.6112 40.9844 22.7253V22.7368Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.3906 9.78085C52.358 6.44404 55.906 7.32698 58.4647 5.58404C61.0234 3.85256 60.6595 1.88029 61.7625 -0.0117188C56.2017 0.55015 52.4262 3.85256 50.3906 9.76939V9.78085Z" fill="#ED923A" fill-opacity="0.3"/></g><defs><clipPath id="clip0_1376_1377"><rect width="92.59" height="165.052" fill="white"/></clipPath></defs></svg>
+                    </div>
+                    <div class="trust-item__text">
+                        <strong>17 Cities<br>Across the</strong>
+                        <span>Globe</span>
+                    </div>
+                     <div class="trust-wreath-right">
+                        <svg viewBox="0 0 93 166" class="wreath-svg" aria-hidden="true"><g clip-path="url(#clip0_1376_1399)"><path fill-rule="evenodd" clip-rule="evenodd" d="M46.3051 11.9258C60.6905 26.3738 70.2657 46.6126 71.744 69.4428C74.7576 116.204 42.6319 156.097 -0.0126953 158.551L0.385315 164.766C44.3264 162.231 77.4186 121.135 74.3141 72.9516C72.7334 48.4817 62.1234 26.9013 46.2937 11.9258H46.3051Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M27.3776 159.915C35.6905 162.632 40.6714 154.892 47.7106 153.666C54.7498 152.439 56.9559 156.67 61.6525 158.206C51.0312 166.749 39.5797 167.242 27.389 159.915H27.3776Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M42.3572 148.747C50.9543 149.573 54.4114 140.835 61.0526 138.049C67.6938 135.262 70.605 138.943 75.4494 139.413C66.6248 150.203 55.5599 153.242 42.3572 148.747Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M58.2704 131.58C65.9578 130.926 67.8455 122.613 73.3268 119.081C78.8194 115.549 81.8671 118.336 86.2111 117.969C79.877 128.965 70.5179 133.449 58.259 131.58H58.2704Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.0279 114.966C74.0444 112.684 74.2832 104.508 78.7296 100.013C83.176 95.5185 86.5193 97.4679 90.4768 96.1836C86.5876 107.834 78.7182 114.049 67.0165 114.955L67.0279 114.966Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M72.5527 97.9273C79.0802 94.3267 78.0113 86.2083 81.6616 80.9221C85.312 75.636 88.9055 76.9202 92.59 74.8906C90.6341 87.1485 83.9019 94.7854 72.5527 97.9273Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M74.177 79.3478C79.7947 74.2681 77.145 66.5625 79.6355 60.508C82.1259 54.4536 85.8786 54.855 89.0514 51.9883C89.5859 64.4641 84.5709 73.5686 74.177 79.3478Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M72.0501 58.5845C75.7118 52.5071 71.5497 46.4986 72.2661 40.4671C72.9712 34.4241 76.3259 33.7017 78.3956 30.2617C81.864 41.0634 79.692 50.5119 72.0501 58.5845Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.9243 40.9807C69.4822 34.6281 64.4103 30.7524 63.4665 25.3401C62.5226 19.9278 65.1836 18.2766 66.0593 14.6875C71.768 22.9091 72.3366 31.6812 67.9129 40.9692L67.9243 40.9807Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M59.2139 26.6246C59.7598 21.7971 55.7114 19.5267 54.5287 15.6739C53.346 11.8211 55.1314 10.3075 55.4384 7.58984C60.3511 12.9792 61.5906 19.3318 59.2253 26.6246H59.2139Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M50.5861 14.9433C49.7559 10.7464 45.8099 10.1387 43.8198 7.30644C41.8184 4.47416 42.8873 2.65095 42.4211 0.277344C47.9023 3.20135 50.5975 8.12057 50.5861 14.9433Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8521 154.01C21.0036 147.899 17.5238 140.663 19.4229 134.15C21.322 127.625 25.143 127.35 28.0542 123.91C29.8851 136.306 25.7571 146.339 15.8521 154.022V154.01Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M30.8203 146.705C35.8353 140.639 32.2759 133.403 34.0499 126.913C35.8239 120.423 39.6107 120.159 42.4423 116.742C44.4552 129.103 40.5091 139.091 30.8203 146.705Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M47.5351 132.886C50.7761 126.293 46.0909 120.64 46.3411 114.425C46.5913 108.199 49.9346 107.086 51.7655 103.371C56.1209 113.978 54.6426 123.828 47.5351 132.898V132.886Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M60.2811 115.686C62.0551 108.933 56.7103 104.678 55.7892 98.8762C54.8794 93.0741 57.7451 91.3655 58.7572 87.5586C64.7161 96.4568 65.171 105.859 60.2811 115.686Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M67.6502 94.6682C68.3439 88.4532 63.1128 85.5292 61.589 80.5641C60.0538 75.599 62.3509 73.6612 62.7376 70.1523C69.0831 77.0782 70.6865 85.2769 67.6502 94.6682Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M68.9277 72.8821C68.2227 67.2979 63.1053 66.0594 60.74 62.1264C58.3746 58.1933 59.9439 55.9229 59.5573 52.7695C66.4828 57.2071 69.5759 63.9381 68.9277 72.8821Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M65.7971 52.3913C64.0344 47.7817 59.4402 47.9996 56.6086 45.2247C53.7883 42.4382 54.6412 40.099 53.6519 37.4961C60.4523 39.5716 64.4779 44.5711 65.7971 52.3913Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M59.5158 36.7071C57.3438 33.0149 53.4091 33.9895 50.5661 32.0631C47.7345 30.1367 48.1439 27.958 46.9157 25.8711C53.0679 26.5018 57.2528 30.1482 59.5158 36.7071Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M51.6057 22.7368C49.5473 19.9389 46.4314 21.1085 43.9865 19.8128C41.5415 18.5171 41.6894 16.7053 40.5294 15.1229C45.5672 15.0427 49.2517 17.6112 51.6057 22.7253V22.7368Z" fill="#ED923A" fill-opacity="0.3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M42.1994 9.78085C40.2321 6.44404 36.684 7.32698 34.1254 5.58404C31.5667 3.85256 31.9306 1.88029 30.8275 -0.0117188C36.3884 0.55015 40.1638 3.85256 42.1994 9.76939V9.78085Z" fill="#ED923A" fill-opacity="0.3"/></g><defs><clipPath id="clip0_1376_1399"><rect width="92.59" height="165.052" fill="white" transform="matrix(-1 0 0 1 92.59 0)"/></clipPath></defs></svg>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Participating Schools -->
+        <section class="schools-marquee" aria-labelledby="schools-title">
+            <div class="container">
+                <h2 id="schools-title" class="section-title text-center">Participating Schools</h2>
+            </div>
+            
+            <div class="marquee-wrapper">
+                <!-- Row 1 Left -->
+                <div class="marquee-row marquee-row--left">
+                    <div class="marquee-row__track">
+                        <div class="school-logo"><img src="assets/images/logos/logo-1.png" alt="School Logo" draggable="false"></div>
+                        <div class="school-logo"><img src="assets/images/logos/logo-2.png" alt="School Logo" draggable="false"></div>
+                        <div class="school-logo"><img src="assets/images/logos/logo-3.png" alt="School Logo" draggable="false"></div>
+                        <div class="school-logo"><img src="assets/images/logos/logo-4.jpg" alt="School Logo" draggable="false"></div>
+                        <div class="school-logo"><img src="assets/images/logos/logo-5.jpg" alt="School Logo" draggable="false"></div>
+                        <div class="school-logo"><img src="assets/images/logos/logo-6.jpg" alt="School Logo" draggable="false"></div>
+                    </div>
+                </div>
+                <!-- Row 2 Right -->
+                <div class="marquee-row marquee-row--right">
+                    <div class="marquee-row__track">
+                        <div class="school-logo"><img src="assets/images/logos/logo-6.jpg" alt="School Logo" draggable="false"></div>
+                        <div class="school-logo"><img src="assets/images/logos/logo-5.jpg" alt="School Logo" draggable="false"></div>
+                        <div class="school-logo"><img src="assets/images/logos/logo-4.jpg" alt="School Logo" draggable="false"></div>
+                        <div class="school-logo"><img src="assets/images/logos/logo-3.png" alt="School Logo" draggable="false"></div>
+                        <div class="school-logo"><img src="assets/images/logos/logo-2.png" alt="School Logo" draggable="false"></div>
+                        <div class="school-logo"><img src="assets/images/logos/logo-1.png" alt="School Logo" draggable="false"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Choose The School -->
+        <section class="choose-school" aria-labelledby="choose-title">
+            <div class="container">
+                <h2 id="choose-title" class="section-title text-center text-purple">Choose the School That Fits You Best</h2>
+                
+                <div class="cards-slider" id="cards-slider">
+                    <!-- Card 1 -->
+                    <article class="school-card">
+                        <img src="assets/images/cards/card-1.png" alt="Pre-Schools" class="school-card__img" draggable="false" loading="lazy">
+                        <div class="school-card__overlay">
+                            <h3 class="school-card__title">Pre-Schools & Early Learning Centres</h3>
+                            <p class="school-card__desc">Nurturing foundational skills for toddlers and pre-primary children.</p>
+                        </div>
+                    </article>
+                    <!-- Card 2 -->
+                    <article class="school-card">
+                        <img src="assets/images/cards/card-2.jpg" alt="K-12 CBSE Schools" class="school-card__img" draggable="false" loading="lazy">
+                        <div class="school-card__overlay">
+                            <h3 class="school-card__title">K-12 CBSE Day Schools</h3>
+                            <p class="school-card__desc">Reputed schools offering complete schooling from Kindergarten to Grade 12.</p>
+                        </div>
+                    </article>
+                    <!-- Card 3 -->
+                    <article class="school-card">
+                        <img src="assets/images/cards/card-3.png" alt="New-Age Schools" class="school-card__img" draggable="false" loading="lazy">
+                        <div class="school-card__overlay">
+                            <h3 class="school-card__title">Heritage to New-Age Schools</h3>
+                            <p class="school-card__desc">Time-tested schools to innovative pedagogy, tech enabled, future-ready schools.</p>
+                        </div>
+                    </article>
+                    <!-- Card 4 -->
+                    <article class="school-card">
+                        <img src="assets/images/cards/card-4.png" alt="International Schools" class="school-card__img" draggable="false" loading="lazy">
+                        <div class="school-card__overlay">
+                            <h3 class="school-card__title">International Curriculum Schools</h3>
+                            <p class="school-card__desc">Offering IB, Cambridge, Finnish and other global curricula with a global learning environment.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Pagination Dots (Mobile) -->
+                <div class="slider-dots" id="slider-dots" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <!-- Pre-schedule Appointments (Full Width) -->
+        <section class="exhibition" aria-label="Special Opportunities">
+            <div class="exhibition__track-wrapper">
+                <div class="exhibition__track">
+                    <div class="exhibition__slide">
+                        <div class="cta-banner">
+                            <div class="cta-banner__content">
+                                <span class="cta-banner__sub">Exciting Opportunities for Parents!</span>
+                                <h2 class="cta-banner__title">Pre-schedule Your<br>School Appointments</h2>
+                                <span class="cta-banner__highlight">To Avoid Rush</span>
+                                <a href="#schedule" class="btn btn--cta">
+                                    <span class="btn__icon" aria-hidden="true">↗</span> 
+                                    <span class="btn__text">Pre-schedule Now</span>
+                                </a>
+                            </div>
+                            <div class="cta-banner__image">
+                                <img src="assets/images/banners/banner.jpg" alt="Pre-schedule Appointments Event" draggable="false" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Must-Visit Slider -->
+        <section class="must-visit" aria-labelledby="must-visit-title">
+            <div class="container must-visit__container">
+                <h2 id="must-visit-title" class="section-title text-center text-white">What Makes This Exhibition a Must-Visit</h2>
+                
+                <div class="mv-slider-wrapper">
+                    <div class="mv-slider" id="mv-slider">
+                        <!-- Card 1 -->
+                        <div class="mv-card">
+                            <div class="mv-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <h3 class="mv-card__title">Interact Directly with School Heads</h3>
+                            <p class="mv-card__desc">Get answers straight from the experts</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="mv-card">
+                            <div class="mv-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                            </div>
+                            <h3 class="mv-card__title">Compare Curriculum & Pedagogy</h3>
+                            <p class="mv-card__desc">Understand the differences between CBSE, ICSE, IB, Cambridge, Finnish & more</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="mv-card">
+                            <div class="mv-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            </div>
+                            <h3 class="mv-card__title">Get Exclusive Fee Structures & Offers</h3>
+                            <p class="mv-card__desc">Access transparent information and avail offers</p>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="mv-card">
+                            <div class="mv-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>
+                            </div>
+                            <h3 class="mv-card__title">Explore Schools Offerings</h3>
+                            <p class="mv-card__desc">Preview infrastructure, co-curricular, teaching methodology and culture</p>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="mv-card">
+                            <div class="mv-card__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <h3 class="mv-card__title">On-spot Counseling & Guidance</h3>
+                            <p class="mv-card__desc">Save time and get personalized guidance on applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="mv-controls">
+                    <button id="mv-prev" class="mv-btn" aria-label="Previous Slide">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    </button>
+                    <button id="mv-next" class="mv-btn" aria-label="Next Slide">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Curved Divider -->
+            <div class="curve-divider">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M0,0 C480,100 960,100 1440,0 V120 H0 V0 Z" fill="#ffffff"></path>
+                </svg>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <!-- Logo Column -->
+            <div class="footer__col footer__col--logo">
+                 <img src="assets/images/logos/logo-main.png" alt="Premier Schools Exhibition" class="logo-img" draggable="false" loading="lazy">
+            </div>
+            <!-- Corporate Office -->
+            <div class="footer__col">
+                <div class="footer__icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#2a1666" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="footer__details">
+                    <h4 class="footer__label">Corporate Office:</h4>
+                    <p class="footer__text">Suite B-5, Ballygunge Park Tower,<br>67B Ballygunge Circular Road,<br>Kolkata - 700019</p>
+                </div>
+            </div>
+            <!-- Ahmedabad Office -->
+            <div class="footer__col">
+                <div class="footer__icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#2a1666" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="footer__details">
+                    <h4 class="footer__label">Ahmedabad Office:</h4>
+                    <p class="footer__text">12/AA, Swastik Chambers, Near CU<br>Shah College, Ashram Road,<br>Ahmedabad - 380009</p>
+                </div>
+            </div>
+            <!-- Call Us -->
+            <div class="footer__col">
+                <div class="footer__icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#2a1666" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="footer__details">
+                    <h4 class="footer__label">Call us on</h4>
+                    <p class="footer__text">9674805912<br>9674585012</p>
+                </div>
+            </div>
+            <!-- Follow Us -->
+            <div class="footer__col">
+                <h4 class="footer__label footer__label--social">Follow us on</h4>
+                <div class="footer__socials">
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2a1666" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2a1666" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2a1666" stroke-width="2" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#2a1666" stroke="none"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>Copyright 2025 | All rights reserved. Premier Schools Exhibition</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
