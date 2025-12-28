@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     // ===============================================
-    // 1. Header Scroll Animation Logic (Throttled)
+    // 1. Header Scroll Animation Logic
     // ===============================================
     const header = document.getElementById('main-header');
     let ticking = false;
@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const marqueeTracks = document.querySelectorAll('.marquee-col__track, .marquee-row__track');
     marqueeTracks.forEach(track => {
         const children = Array.from(track.children);
-        // Duplicate twice to ensure seamless loop
         children.forEach(item => track.appendChild(item.cloneNode(true)));
         children.forEach(item => track.appendChild(item.cloneNode(true)));
     });
@@ -39,20 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if(cardSlider && dotsContainer) {
         const cards = cardSlider.querySelectorAll('.school-card');
-        
         cards.forEach((_, index) => {
             const dot = document.createElement('div');
             dot.classList.add('dot');
             if(index === 0) dot.classList.add('active');
-            
             dot.addEventListener('click', () => {
                 const cardWidth = cards[0].offsetWidth + 16; 
                 cardSlider.scrollTo({ left: index * cardWidth, behavior: 'smooth' });
             });
             dotsContainer.appendChild(dot);
         });
-
-        // Intersection Observer for Active Dot state
         const dots = dotsContainer.querySelectorAll('.dot');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -63,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }, { root: cardSlider, threshold: 0.6 });
-
         cards.forEach(card => observer.observe(card));
     }
 
@@ -76,13 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (mvSlider && mvPrevBtn && mvNextBtn) {
         let currentIndex = 0;
-        
         function getItemsPerScreen() {
             if (window.innerWidth >= 992) return 4;
             if (window.innerWidth >= 600) return 2;
             return 1;
         }
-
         function updateSlider() {
             const items = mvSlider.children;
             const cardWidth = items[0].offsetWidth;
@@ -90,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const moveAmount = cardWidth + gap;
             mvSlider.style.transform = `translateX(-${currentIndex * moveAmount}px)`;
         }
-
         mvNextBtn.addEventListener('click', () => {
             const totalItems = mvSlider.children.length;
             const itemsPerScreen = getItemsPerScreen();
@@ -98,7 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (currentIndex < maxIndex) { currentIndex++; } else { currentIndex = 0; }
             updateSlider();
         });
-
         mvPrevBtn.addEventListener('click', () => {
             const totalItems = mvSlider.children.length;
             const itemsPerScreen = getItemsPerScreen();
@@ -106,7 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (currentIndex > 0) { currentIndex--; } else { currentIndex = maxIndex; }
             updateSlider();
         });
-
         window.addEventListener('resize', updateSlider);
     }
 
